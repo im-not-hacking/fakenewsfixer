@@ -1,15 +1,18 @@
 import psu from "../assets/psuLogo.png"
+import { navButtons } from "../constants";
 
 interface ButtonProps {
-    title: string;
     reference: string;
+    children: string
 }
 
-let Button = (props:ButtonProps) => {
+let Button = ({reference,children}:ButtonProps) => {
     
     return (
-        <a href={props.reference}>
-            {props.title}
+        <a href={reference}>
+            <div className="p-[10px] bg-[white] rounded-[15px]">
+                <p className="font-bold">{children}</p>
+            </div>
         </a>
     )
 }
@@ -17,16 +20,18 @@ let Button = (props:ButtonProps) => {
 let Nav = () => {
 
     return (
-        <div className="w-[100vw] flex z-10 ">
-          <div className="grow h-[100px] flex">
-            <div className="flex grow basis-0 shrink-0 ml-[50px]">
-                <img style={{height:'120px'}} className="" src={psu}/>
+        <div className="w-[100vw] flex z-10 h-[100px]">
+          <div className="grow flex">
+            <div className="flex grow basis-0 shrink-0 ml-[30px]">
+                <img style={{width:'auto', height:'100%'}} src={psu}/>
             </div>
             <div className="flex grow justify-center items-center basis-0 shrink-0">
-                <h1 className="text-[white] align-baseline font-bold">False News Fixer</h1>
+                <h1 className="text-[white] align-baseline font-bold text-[30px]"></h1>
             </div>
-            <div className="flex grow justify-end basis-0 shrink-0">
-                <Button title="Hola" reference="www.google.com"/>
+            <div className="flex grow justify-end items-center gap-[30px] basis-0 shrink-0 mr-[30px]">
+                {navButtons.map((item,i) =>(
+                    <Button key={i} reference={item.reference}>{item.name}</Button>
+                ))}
             </div>
           </div>
         </div>

@@ -17,7 +17,6 @@
 }
 .bubble p {
     transform: translatey(0px);
-    animation: float 5s ease-in-out infinite;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -29,9 +28,14 @@
     position: relative;
     box-shadow: 20px 20px white;
   }
+.animateP {
+  animation: float 5s ease-in-out infinite;
+}
+.animateAfter{
+  animation: float2 5s ease-in-out infinite;
+}
 .bubbleAfter {
     transform: translatey(0px);
-    animation: float2 5s ease-in-out infinite;
     font-weight: bold;
     text-shadow: 22px 22px white;
     text-align: left;
@@ -511,3 +515,4 @@
   opacity: 0.5;
   background-size: cover;
 }
+
