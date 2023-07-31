@@ -1,0 +1,25 @@
+.selectionButton{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px;
+}
+
+.normalSelectionButton{
+    color: #001a73;
+    background-color: #aaf6ff;
+}
+
+.correctSelectionButton{
+    background-color: greenyellow;
+}
+
+.incorrectSelectionButton{
+    background-color: red;
+}

@@ -1,6 +1,9 @@
 import Nav from './components/Nav.tsx';
 import MainScreen from './components/MainScreen.tsx';
 import About from './components/About.tsx';
+import Videos from './components/Videos.tsx';
+import Quiz from './components/Quiz.tsx';
+import Footer from './components/Footer.tsx';
 import './index.css'
 import { useState } from 'react';
 
@@ -17,6 +20,9 @@ function App() {
           <MainScreen change = {handleState}/>
       </div>
       {hasEntered ? <About/> : ""}
+      {hasEntered ? <Videos/> : ""}
+      {hasEntered ? <Quiz/> : ""}
+      {hasEntered ? <Footer/> : ""}
     </>
 	)
 }

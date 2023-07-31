@@ -28,11 +28,11 @@ let Nav = () => {
             <div className="flex grow justify-center items-center basis-0 shrink-0">
                 <h1 className="text-[white] align-baseline font-bold text-[30px]"></h1>
             </div>
-            <div className="flex grow justify-end items-center gap-[30px] basis-0 shrink-0 mr-[30px]">
+            {/*<div className="flex grow justify-end items-center gap-[30px] basis-0 shrink-0 mr-[30px]">
                 {navButtons.map((item,i) =>(
                     <Button key={i} reference={item.reference}>{item.name}</Button>
                 ))}
-            </div>
+                </div>*/}
           </div>
         </div>
     )

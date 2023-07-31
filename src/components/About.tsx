@@ -1,33 +1,33 @@
-import { navButtons } from "../constants"
+import { aboutSections } from '../constants'
+
 import './About.css'
+import '../index.css'
+import { useState } from 'react'
 
-const MainPanel = () => {
-    return (
-        <div className="flex flex-col justify-center items-center w-[150px] h-[100%]">
-            {navButtons.map((item,i) =>(
-                <div key={i} className="grow flex justify-left items-center">
-                    <div className="flex rounded-full justify-center items-center w-[60px] h-[60px] bg-[white]"/>
-                </div>
-            ))}
-        </div>
-    )
-}
-
-const MainSection = () =>{
-    return (
-        <>
-            <div className="relative grow bg-[red] rounded-[30px] floating"/>
-            <div className="absolute border-[20px] border-[black] w-[98%] h-[100%] bg-[white] rounded-[50px] rotate-[-3deg] mt-[4%] ml-[15%]"/>
-        </>
-    )
-}
 
 const About = () => {
+    const [index,setIndex] = useState(0)
+
     return (
-        <div className="bg-[black] w-[100vw] h-[100vh] p-[5%]">
-            <div className="relative w-[100%] h-[100%] flex ">
-                <MainPanel/>
-                <MainSection/>
+        <div className="section bg-[#f1f1f1] p-[3%]">
+            <div className='w-[100%] h-[95%] flex flex-col'>
+                <div className='p-[20px] font-bold text-[40px]'>
+                    <h1>{aboutSections[index].title}</h1>
+                </div>
+                <div className='grow bg-[black] pl-[20px] rounded-[20px] flex pt-[3%] justify-end'>
+                    <ul style={{background: `#f1f1f1`}} className='grow flex gap-[5%] flex-col p-[20px] bg-[green]'>
+                        {aboutSections[index].subsections.map((indexComponent,i)=>(
+                            <li key={i} style={{fontSize: aboutSections[index].size}} className='max-h-[85%] p-[5px] grow w-[95%] bg-[#f1f1f1] rounded-[20px] items-center'>{indexComponent}</li>
+                        ))
+
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div className='aboutButtons flex w-[100%] gap-[5%] justify-center mt-[20px]'>
+                {aboutSections.map((item,i) => (
+                    <div key={i} style={(index == i) ? {background:`${item.color}`} : {background: "black"}} className='cursor-pointer rounded-full w-[30px] h-[30px]' onClick={() => setIndex(i)}/>
+                ))}
             </div>
         </div>
     )
