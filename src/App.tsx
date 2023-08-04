@@ -6,19 +6,20 @@ import Quiz from './components/Quiz.tsx';
 import Footer from './components/Footer.tsx';
 import Bio from './components/Bio.tsx';
 import './index.css'
-import { useState } from 'react';
+//import { useState } from 'react';
 
 function App() {
-  let [hasEntered, setHasEntered] = useState(true);
+  const hasEntered = true;
+  /*let [hasEntered, setHasEntered] = useState(true);
    function handleState(entered:boolean) {
       setHasEntered(entered);
-   }
+   }*/
 
   return (
     <>
       <div className='flex flex-col w-screen h-screen bg-[black]'>
           <Nav/>
-          <MainScreen change = {handleState}/>
+          <MainScreen/>
       </div>
       {hasEntered ? <About/> : ""}
       {hasEntered ? <Videos/> : ""}

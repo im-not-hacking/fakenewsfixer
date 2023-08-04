@@ -1,14 +1,17 @@
 import PopAnimation from './PopAnimation.tsx';
 import './PopAnimation.css'
 import './MainScreen.css'
-import { useState } from 'react';
+//import { useState } from 'react';
 
-interface Props  {
+/*interface Props  {
   change: (entered:boolean) => void;
-}
+}*/
 
-function MainScreen({change}:Props) {
-  const [popScreen, setPopScreen] = useState(0);
+function MainScreen() {
+  const isTurnedOff = 0;
+  const popScreen = 0;
+  
+  /*const [popScreen, setPopScreen] = useState(0);
   const [isTurnedOff, setIsTurnedOff] = useState(0);
   const [showButton, setShowButton] = useState(1);
 
@@ -21,7 +24,7 @@ function MainScreen({change}:Props) {
       setShowButton(0);
       change(true);
     },3000)
-  }
+  }*/
 
     return (
       <>
