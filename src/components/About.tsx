@@ -9,9 +9,9 @@ const About = () => {
     const [index,setIndex] = useState(0)
 
     return (
-        <div className="section bg-[#f1f1f1] p-[3%]">
+        <div id="about" className="bg-[#f1f1f1] p-[3%]">
             <div className='w-[100%] h-[95%] flex flex-col'>
-                <div className='p-[20px] font-bold text-[40px]'>
+                <div className='p-[20px] font-bold text-[30px]'>
                     <h1>{aboutSections[index].title}</h1>
                 </div>
                 <div className='grow bg-[black] pl-[20px] rounded-[20px] flex pt-[3%] justify-end'>

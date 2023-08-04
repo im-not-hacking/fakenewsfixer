@@ -10,29 +10,27 @@ let Button = ({reference,children}:ButtonProps) => {
     
     return (
         <a href={reference}>
-            <div className="p-[10px] bg-[white] rounded-[15px]">
+            <div className=" hidden sm:block p-[10px] bg-[white] rounded-[15px]">
                 <p className="font-bold">{children}</p>
             </div>
         </a>
     )
 }
 
+
 let Nav = () => {
 
     return (
         <div className="w-[100vw] flex z-10 h-[100px]">
           <div className="grow flex">
-            <div className="flex grow basis-0 shrink-0 ml-[30px]">
+            <div className="flex grow basis-0 shrink-0 ml-[5vw]">
                 <img style={{width:'auto', height:'100%'}} src={psu}/>
             </div>
-            <div className="flex grow justify-center items-center basis-0 shrink-0">
-                <h1 className="text-[white] align-baseline font-bold text-[30px]"></h1>
-            </div>
-            {/*<div className="flex grow justify-end items-center gap-[30px] basis-0 shrink-0 mr-[30px]">
+            <div className="flex grow justify-end items-center gap-[30px] basis-0 shrink-0 mr-[30px]">
                 {navButtons.map((item,i) =>(
                     <Button key={i} reference={item.reference}>{item.name}</Button>
                 ))}
-                </div>*/}
+            </div>
           </div>
         </div>
     )

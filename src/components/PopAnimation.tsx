@@ -88,7 +88,7 @@ function PopAnimation({showAll} : mainProps) {
   },[]);
 
     return (
-        <div className= "absolute w-[100%] h-[100%]">
+        <div className= "absolute w-[100%] h-[100%] overflow-hidden">
           {messages.length
           ? messages.map((item,i) => <Bubble key={i} size={item.size} color={item.color} position={[item.top,item.left]} animate={item.animate}>{item.text}</Bubble>)
           : ''

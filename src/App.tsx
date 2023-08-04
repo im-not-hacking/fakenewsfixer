@@ -4,11 +4,12 @@ import About from './components/About.tsx';
 import Videos from './components/Videos.tsx';
 import Quiz from './components/Quiz.tsx';
 import Footer from './components/Footer.tsx';
+import Bio from './components/Bio.tsx';
 import './index.css'
 import { useState } from 'react';
 
 function App() {
-  let [hasEntered, setHasEntered] = useState(false);
+  let [hasEntered, setHasEntered] = useState(true);
    function handleState(entered:boolean) {
       setHasEntered(entered);
    }
@@ -22,6 +23,7 @@ function App() {
       {hasEntered ? <About/> : ""}
       {hasEntered ? <Videos/> : ""}
       {hasEntered ? <Quiz/> : ""}
+      {hasEntered ? <Bio/> : ""}
       {hasEntered ? <Footer/> : ""}
     </>
 	)

@@ -1,0 +1,18 @@
+
+
+.shadow::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/carolina.jpeg');
+    display: inline-block;
+    margin-top:20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainShadow{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}

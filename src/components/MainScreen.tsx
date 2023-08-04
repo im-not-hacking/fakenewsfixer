@@ -33,12 +33,22 @@ function MainScreen({change}:Props) {
               <div className="environment z-[-1]"></div>
               <h2 className="hero glitch layers font-bold" data-text="False News Fixer"><span>False News Fixer</span></h2>
             </div>
-            <button style={{display: `${!showButton ? "none" : "block"}`}} className="absolute font-bold border-[7px] p-[20px] text-[40px] border-[white] text-[white] rounded-[10px] cursor-pointer z-50 top-[420px] left-[200px]" onClick={() =>  mainOff()}>
+            {/*<button style={{display: `${!showButton ? "none" : "block"}`}} className="absolute font-bold border-[7px] p-[20px] text-[40px] border-[white] text-[white] rounded-[10px] cursor-pointer z-50 top-[420px] left-[200px]" onClick={() =>  mainOff()}>
                 Start
-            </button>
+    </button>*/}
+            <div className='left-[0vw] top-[67vh] absolute w-[100%] justify-center items-center flex'>
+              <button className="font-bold border-[4px] p-[10px] text-[20px] border-[white] text-[white] rounded-[10px] cursor-pointer z-50"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href='#about';
+                  }}
+              >
+                          Start
+              </button>
+            </div>
           </section>
         </div>
-        <div className={isTurnedOff ? 'noise absolute w-[100%] h-[100%]' : ''}></div>
+        <div className={isTurnedOff ? 'bg-[black] absolute w-[100%] h-[100%]' : ''}></div>
       </>
       )
   }

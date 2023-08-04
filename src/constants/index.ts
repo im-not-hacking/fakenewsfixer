@@ -40,15 +40,15 @@ const colors = [
 const navButtons = [
     {
         name: "About",
-        reference: "http://www.google.com"
+        reference: "#about"
     },
     {
         name: "Videos",
-        reference: "http://www.google.com"
+        reference: "#videos"
     },
     {
         name: "Quiz",
-        reference: "http://www.google.com"
+        reference: "#quiz"
     },
 ]
 
@@ -56,7 +56,7 @@ const aboutSections = [
     {
         title: "What is fake news?",
         subsections: [
-            '"Fake News". You probably heard this term before, and I am assuming that was multiple times. But, let me ask you, how would you define the term fake news? Well, it might sounds obvious, after all is a news that is fake, duh. And, in fact, that is pretty much the main idea of this concept. However, this term can be much more complex. Let me provide you with some famous definitions of the term. '
+            '"Fake News” is a term you most likely have heard multiple times. But, how would you define the term fake news? What falls under and outside this category? 1.	Fake news is false or misleading information that is presented as news.'
         ],
         size: "25px",
         color: "#fb0102"
@@ -64,15 +64,15 @@ const aboutSections = [
     {
         title: "Why do people create fake news?",
         subsections: [
-            "To manipulate public opinion: As a tool to influence people's beliefs and attitudes towards a particular topic, candidate, or issue.",
+            "1. To manipulate public opinion: Fake news can be used as a tool to influence people's beliefs and attitudes towards a particular topic, candidate, or issue.",
             
-            "To generate clicks and revenue: The more clicks an article receives, the more money can be made through advertising revenue. This is also know as clickbait.",
+            "2. To generate clicks and revenue: In some cases, fake news is created purely for financial gain. The more clicks an article receives, the more money can be made through advertising revenue. This is also known as clickbait.",
             
-            "To promote a particular interests: Fake news can be used to promote a particular political or social interests, either by individuals or organizations seeking to advance their own interests.",
+            "3. To promote a particular interest: Fake news can be used to promote a particular political or social interest, either by individuals or organizations seeking to advance their own agenda.",
             
-            "To propagate discord and create chaos: Some people create fake news with the intention of causing confusion and chaos, and to undermine trust in established institutions.",
+            "4. To propagate discord and create chaos: Some people create fake news with the intention of causing confusion and chaos, and to undermine trust in established institutions.",
             
-            "To gain attention: Some individuals create fake news simply to gain attention, recognition or notoriety. "
+            "5. To gain attention: Some individuals create fake news simply to gain attention, recognition, or notoriety."
         ],
         size: "15px",
         color:  "#f9fb00"

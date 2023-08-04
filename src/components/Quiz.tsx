@@ -61,23 +61,23 @@ function Quiz() {
     }
 
     return (
-        <div className="py-[100px] bg-[#f1f1f1] flex justify-center items-center">
+        <div id="quiz" className="py-[100px] bg-[#f1f1f1] flex justify-center items-center">
         {
             takingQuiz ? 
             <div className="flex flex-col flex-nowrap justify-center items-center gap-[30px]">
-                <h1 className="font-bold text-[40px]">{resultsText}</h1>
+                <h1 className="font-bold text-[40px] text-center">{resultsText}</h1>
                 <div onClick={() => setTakingQuiz(0)} className="cursor-pointer bg-[red] p-[10px] text-[#f1f1f1] rounded-[20px] text-[20px] max-w-[112px]">Take Quiz!</div>
             </div>
         :
-            <div className="w-[100vw] h-[70vh] px-[5%] flex">
+            <div className="w-[100vw] px-[5%] flex">
                 <div className="grow  flex flex-col">
-                    <div className="min-h-[75px] flex items-center pl-[20px]">
-                        <h1 className="grow basis-0 shrink-0 text-[30px] font-bold">Question {totalAnwered}</h1>
-                        <h1 className="grow basis-0 shrink-0 text-[30px] font-bold justify-center items-center flex">{totalAnwered}/8</h1>
-                        <div onClick={() => !questionAnswered ? "" : nextQuestion()}style={!questionAnswered ? {color:"gray"} : {color: "black"}} className="cursor-pointer grow basis-0 shrink-0 text-[30px] font-bold justify-center flex items-center">{nextOrResult}</div>
+                    <div className="min-h-[75px] flex items-center ">
+                        <h1 className="grow basis-0 shrink-0 text-[20px] sm:text-[30px] font-bold justify-center items-center flex">Q. {totalAnwered}</h1>
+                        <h1 className="grow basis-0 shrink-0 text-[20px] sm:text-[30px] font-bold justify-center items-center flex">{totalAnwered}/8</h1>
+                        <div onClick={() => !questionAnswered ? "" : nextQuestion()}style={!questionAnswered ? {color:"gray"} : {color: "black"}} className="cursor-pointer grow basis-0 shrink-0 text-[20px] sm:text-[30px] font-bold justify-center flex items-center">{nextOrResult}</div>
                     </div>
-                    <div className="grow flex">
-                        <div className="grow p-[10px] pt-[40px] flex basis-0 shrink-0">
+                    <div className="grow flex flex-wrap">
+                        <div className="min-w-[300px] sm:h-[400px] h-[200px] grow p-[10px] pt-[0px] flex basis-0 shrink-0">
                             <div style={{backgroundImage: `url(${questionsImages[totalAnwered-1]})`}} className="grow rounded-[20px] bg-contain bg-no-repeat bg-center"></div>
                         </div>
                         <div className="grow p-[10px] flex basis-0 shrink-0">
