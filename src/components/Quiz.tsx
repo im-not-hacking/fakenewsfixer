@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 import { questions } from "../constants";
+import { instructions } from "../constants";
 
 import question1 from '../assets/q1.jpeg';
 import question2 from '../assets/q2.jpeg';
@@ -24,7 +25,7 @@ function Quiz() {
     const [showColors, setShowColors] = useState(0)
 
     const [nextOrResult, setNextOrResult] = useState("Next")
-    const [resultsText, setResultsText] = useState("Practice what you learned!")
+    const [resultsText, setResultsText] = useState("Test what you learned in the Fake News Game!")
 
     const [totalRight, setTotalRight] = useState(0)
 
@@ -66,6 +67,11 @@ function Quiz() {
             takingQuiz ? 
             <div className="flex flex-col flex-nowrap justify-center items-center gap-[30px]">
                 <h1 className="font-bold text-[40px] text-center">{resultsText}</h1>
+                <div className="text-center justify-center items-center flex flex-col">
+                    <h1 className="font-bold">{instructions.title + " :"}</h1>
+                    <br/>
+                    <p className="w-[50%]">{instructions.rules}</p>
+                </div>
                 <div onClick={() => setTakingQuiz(0)} className="cursor-pointer bg-[red] p-[10px] text-[#f1f1f1] rounded-[20px] text-[20px] max-w-[112px]">Take Quiz!</div>
             </div>
         :

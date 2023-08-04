@@ -40,7 +40,7 @@ function Videos() {
                         <div className='hidden sm:block w-[10px] h-[100%] bg-[#f1f1f1]'></div>
                         <div className='grow flex items-center justify-center flex-col p-[20px] gap-[20px]'>
                             <h1 className='text-[white] font-bold text-[30px]'> Interview with an expert</h1>
-                            <p className='text-[white] text-[15px]'>Matt Jordan is a critical media scholar who works on the role of media in everyday culture. He is a professor at the Pennsylvania State University and his graduate teaching and research explores how different popular media forms and media technologies are used – and have been used - to constitute and reify aspects of personal identity and cultural ideology.</p>
+                            <p className='text-[white] text-[15px]'>Dr. Matt Jordan is a critical media scholar who works on the role of media in everyday culture. He is a professor at the Pennsylvania State University and his graduate teaching and research explores how different popular media forms and media technologies are used – and have been used - to constitute and reify aspects of personal identity and cultural ideology.</p>
                             <div onClick={()=>setMoreVideos(0)} className='rounded-[20px] p-[15px] mt-[20px] bg-[white] text-[black] text-[25px] font-bold cursor-pointer'>More videos</div>
                         </div>
                     </div>

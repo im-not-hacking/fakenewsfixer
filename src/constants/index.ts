@@ -50,6 +50,10 @@ const navButtons = [
         name: "Quiz",
         reference: "#quiz"
     },
+    {
+        name: "About Me",
+        reference: "#aboutme"
+    },
 ]
 
 const aboutSections = [
@@ -58,7 +62,7 @@ const aboutSections = [
         subsections: [
             '"Fake News” is a term you most likely have heard multiple times. But, how would you define the term fake news? What falls under and outside this category? 1.	Fake news is false or misleading information that is presented as news.'
         ],
-        size: "25px",
+        size: "15px",
         color: "#fb0102"
     },
     {
@@ -107,15 +111,15 @@ const aboutSections = [
             
             "Check the date of the article: Sometimes, fake news articles can be old or out-of-date. Be sure to check the date of the article before accepting its claims. "
         ],
-        size: "13px",
+        size: "15px",
         color: "#0301fc"
     },
     {
         title: "Conclusion",
         subsections: [
-            "Overall, it is important to be skeptical of all sources of information and to verify any claims before accepting them as true. By applying critical thinking and using reliable sources, we can avoid being fooled by fake news. "
+            "Overall, it is important to be skeptical of all sources of information and to verify any claims before accepting them as true. By applying critical thinking and using reliable sources, we can avoid being fooled by fake news."
         ],
-        size: "25px",
+        size: "15px",
         color: "#02feff"
     }
 ]
@@ -127,12 +131,12 @@ const videos = [
         img: "https://img.youtube.com/vi/QXOoH4xW5Mc/maxresdefault.jpg"
     },
     {
-        title: "History of fake news",
+        title: "What is the history of fake news?",
         url: "https://www.youtube.com/watch?v=6PumXO_iTIA",
         img: "https://img.youtube.com/vi/6PumXO_iTIA/maxresdefault.jpg"
     },
     {
-        title: "How to identify fake news",
+        title: "How do you identify fake news?",
         url: "https://www.youtube.com/embed/_7X-9dhK2g4",
         img: "https://img.youtube.com/vi/_7X-9dhK2g4/maxresdefault.jpg"
     },
@@ -142,7 +146,7 @@ const videos = [
         img: "https://img.youtube.com/vi/4J14pt9Od6c/maxresdefault.jpg"
     },
     {
-        title: "Why people should be aware of fake news?",
+        title: "Why should people be aware of fake news?",
         url: "https://www.youtube.com/embed/iXpGUzGnMco",
         img: "https://img.youtube.com/vi/iXpGUzGnMco/maxresdefault.jpg"
     },
@@ -152,7 +156,7 @@ const videos = [
         img: "https://img.youtube.com/vi/r_6vfu3BxcE/maxresdefault.jpg"
     },
     {
-        title: "Challenges faced when educating others about fake news",
+        title: "What challenges have you faced when educating others about fake news?",
         url: "https://www.youtube.com/embed/YCAHfwcOaV8",
         img: "https://img.youtube.com/vi/YCAHfwcOaV8/maxresdefault.jpg"
     }
@@ -253,4 +257,17 @@ const questions = [
   },
 ];
 
-export {popUps,colors, navButtons, sizes, aboutSections, videos, questions};
+const instructions = {
+    title: "Instructions",
+    rules: "You will be presented with a series of news excerpts. For each option, select whether it is TRUE (news) or FALSE (fake news)."
+};
+
+const bio = [
+    "Carolina developed this project as a Public Humanities Fellow at Penn State’s Humanities Institute. She is a graduate in Industrial Engineering with a minor in French and Francophonic Studies from the Pennsylvania State University. She was born in Brasília, Brazil and has Greek origins from her mother's family side. Due to her bicultural environment while growing up, she became passionate about traveling and learning about new cultures. And this passion led her to study abroad in different countries, such as the United States, United Kingdom, Switzerland and Chile.",
+
+    "Her interest in the topic of fake news arose during 2022 elections in Brazil. 'My family´s group chat would be loaded of fake news regarding the politic scenario, a lot of bias, exaggerated predictions about the new government and many unrealistic headlines.'",
+    
+    "With this website, she hopes to provide a new resource of media literacy and reduce, to some extent, the mass spread of fake news."
+];
+
+export {popUps,colors, navButtons, sizes, aboutSections, videos, questions, bio, instructions};
