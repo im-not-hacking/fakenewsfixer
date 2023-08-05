@@ -1,29 +1,7 @@
 import { useState } from 'react'
 import './MainScreen.css'
+import './Bio.css'
 import { videos } from '../constants'
-
-const Gallery = () =>{
-    return (
-        <div className='grow rounded-[20px] p-[50px] flex'>
-        <div className='grow flex flex-col'>
-            <div className='w-[100%] '>
-                <h1 className="font-bold text-[white] text-[40px]">Video Gallery</h1>
-                <div className='w-[100%] h-[5px] bg-[white]'/>
-            </div>
-            <div className='grow flex pt-[20px] p-[3%] gap-[30px] flex-wrap justify-center'>
-                {videos.map((item,i) =>(
-                    <a key={i} href={item.url} className='min-w-[200px] w-[20%] flex'>
-                        <div className='w-[100%] sm:h-[200px] rounded-[20px] flex flex-col sm:border-solid border-none border-[white] border-[3px]'>
-                            <div style={{backgroundImage: `url(${item.img})`}} className='hidden sm:block grow rounded-t-[20px] bg-cover bg-no-repeat bg-center opacity-30 hover:opacity-100'></div>
-                            <div className='w-[100%] bg-[white] sm:rounded-b-[10px] justify-center flex'>{item.title}</div>
-                        </div>
-                    </a>
-                ))}
-            </div>
-        </div>
-    </div>
-    )
-}
 
 function Videos() {
     const [moreVideos, setMoreVideos] = useState(1)
@@ -46,7 +24,27 @@ function Videos() {
                     </div>
                 </>
                 : 
-                <Gallery/>
+                <div className='grow rounded-[20px] p-[50px] flex'>
+        <div className='grow flex flex-col'>
+            <div className='w-[100%] mb-[20px]'>
+                <div className='flex flex-row items-center'>
+                    <div onClick={()=>setMoreVideos(1)} className='arrowLeft mr-[20px] ml-[20px] cursor-pointer '></div>
+                    <h1 className="font-bold text-[white] text-[30px]">Video Gallery</h1>
+                </div>
+                <div className='w-[100%] h-[3px] bg-[white]'/>
+            </div>
+            <div className='grow flex pt-[20px] p-[3%] gap-[30px] flex-wrap justify-center'>
+                {videos.map((item,i) =>(
+                    <a key={i} href={item.url} className='min-w-[200px] w-[20%] flex'>
+                        <div className='w-[100%] sm:h-[200px] rounded-[20px] flex flex-col sm:border-solid border-none border-[white] border-[3px]'>
+                            <div style={{backgroundImage: `url(${item.img})`}} className='hidden sm:block grow rounded-t-[20px] bg-cover bg-no-repeat bg-center opacity-30 hover:opacity-100'></div>
+                            <div className='w-[100%] bg-[white] sm:rounded-b-[10px] justify-center flex'>{item.title}</div>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
                 }
             </div>
         </div>

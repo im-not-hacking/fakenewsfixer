@@ -30,10 +30,12 @@ const Bio = () => {
                 <h1 className='text-[30px] font-bold'>About me</h1>
             </div>
             <div className="w-[100%] flex gap-[50px] md:gap-[100px] flex-wrap md:flex-nowrap">
-                <div className="relative w-[100%] min-w-[250px] relative flex justify-center items-center">
+                <div className="relative w-[100%] min-w-[250px] relative flex flex-col items-center">
                     <div className="inline-block relative shadow h-[300px] w-[250px] min-w-[250px] bg-[black] rounded-[20px]"></div>
-                    <div className='absolute bg-[#0072b1] w-[80px] h-[80px] left-0 bottom-0 rounded-full flex justify-center items-center p-[2%]'>
-                        <a style={{backgroundImage: `url(${linkedin})`}} href="https://www.linkedin.com/in/carolina-tzemos/" className='bg-contain bg-no-repeat bg-center grow h-[100%] rounded-full'></a>
+                    <div className='z-50 w-[250px]'>
+                        <div className='mt-[-25px] bg-[#0072b1] w-[80px] h-[80px] rounded-full flex justify-center items-center p-[2%]'>
+                            <a style={{backgroundImage: `url(${linkedin})`}} href="https://www.linkedin.com/in/carolina-tzemos/" className='bg-contain bg-no-repeat bg-center grow h-[100%] rounded-full'></a>
+                        </div>
                     </div>
                 </div>
                 <div className="relative grow flex  p-[5%] bg-[#fff] mainShadow rounded-[20px]">

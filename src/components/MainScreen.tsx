@@ -35,7 +35,7 @@ function MainScreen() {
           <section className='grow'>
             <div className="hero-container">
               <div className="environment z-[-1]"></div>
-              <h2 className="hero glitch layers font-bold" data-text="False News Fixer"><span>False News Fixer</span></h2>
+              <h2 className="hero glitch layers font-bold" data-text="False News Fixer"><span>Fake News Fixer</span></h2>
             </div>
             {/*<button style={{display: `${!showButton ? "none" : "block"}`}} className="absolute font-bold border-[7px] p-[20px] text-[40px] border-[white] text-[white] rounded-[10px] cursor-pointer z-50 top-[420px] left-[200px]" onClick={() =>  mainOff()}>
                 Start
