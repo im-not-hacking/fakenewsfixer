@@ -60,7 +60,8 @@ const aboutSections = [
     {
         title: "What is fake news?",
         subsections: [
-            '"Fake News” is a term you most likely have heard multiple times. But, how would you define the term fake news? What falls under and outside this category? 1.	Fake news is false or misleading information that is presented as news.'
+            "Fake News” is a term you most likely have heard multiple times. But, how would you define the term fake news? What falls under and outside this category?",
+             "1.	Fake news is false or misleading information that is presented as news."
         ],
         size: "15px",
         color: "#fb0102"
@@ -68,30 +69,46 @@ const aboutSections = [
     {
         title: "Why do people create fake news?",
         subsections: [
-            "1. To manipulate public opinion: Fake news can be used as a tool to influence people's beliefs and attitudes towards a particular topic, candidate, or issue.",
+            "1. To manipulate public opinion:",
+            "Fake news can be used as a tool to influence people's beliefs and attitudes towards a particular topic, candidate, or issue.",
+            "",
             
-            "2. To generate clicks and revenue: In some cases, fake news is created purely for financial gain. The more clicks an article receives, the more money can be made through advertising revenue. This is also known as clickbait.",
+            "2. To generate clicks and revenue:",
+            "In some cases, fake news is created purely for financial gain. The more clicks an article receives, the more money can be made through advertising revenue. This is also known as clickbait.",
+            "",
             
-            "3. To promote a particular interest: Fake news can be used to promote a particular political or social interest, either by individuals or organizations seeking to advance their own agenda.",
+            "3. To promote a particular interest:",
+            "Fake news can be used to promote a particular political or social interest, either by individuals or organizations seeking to advance their own agenda.",
+            "",
+
+            "4. To propagate discord and create chaos:",
+            "Some people create fake news with the intention of causing confusion and chaos, and to undermine trust in established institutions.",
+            "",
             
-            "4. To propagate discord and create chaos: Some people create fake news with the intention of causing confusion and chaos, and to undermine trust in established institutions.",
-            
-            "5. To gain attention: Some individuals create fake news simply to gain attention, recognition, or notoriety."
+            "5. To gain attention:",
+            "Some individuals create fake news simply to gain attention, recognition, or notoriety."
         ],
         size: "15px",
         color:  "#f9fb00"
 
     },
     {
-        title: "Why is fake news an issue?",
+        title: "Why is fake news an issue to society?",
         subsections: [
-            "It can mislead and deceive people: Fake news can spread false or misleading information, which can have serious consequences. People may make decisions based on false information, which can lead to negative outcomes in their personal lives, or in the society.",
+            "1. It can mislead and deceive people:",
+            "Fake news can spread false or misleading information, which can have serious consequences. People may make decisions based on false information, which can lead to negative outcomes in their personal lives, or in society.",
+            "",
             
-            "It can undermine trust in institutions: When people are exposed to fake news, they may become skeptical of established institutions, such as the media, government, and scientific community. This can weak public trust in these institutions, which are essential for maintaining a stable and functioning society.",
+            "2. It can undermine trust in institutions:",
+            "When people are exposed to fake news, they may become skeptical of established institutions, such as the media, government, and scientific community. This can weaken public trust in these institutions, which are essential for maintaining a stable and functioning society.",
+            "",
             
-            "It can generate social and political divisions: Fake news can be used to spread hate and division, by promoting misinformation and false narratives. This can lead to increased social and political tensions, and even violence.",
+            "3. It can generate social and political divisions:",
+            "Fake news can be used to spread hate and division, by promoting misinformation and false narratives. This can lead to increased social and political tensions, and even violence.",
+            "",
             
-            "It can interfere with democratic processes: In democratic societies, the free and fair exchange of ideas and information is essential for holding leaders accountable and making informed decisions. When fake news is used to influence elections or public opinion, it can undermine the integrity of democratic processes. "
+            "4. It can interfere with democratic processes:",
+            "In democratic societies, the free and fair exchange of ideas and information is essential for holding leaders accountable and making informed decisions. When fake news is used to influence elections or public opinion, it can undermine the integrity of democratic processes."
         ],
         size: "15px",
         color: "#fd00fb"
@@ -99,17 +116,30 @@ const aboutSections = [
     {
         title: "How not to be fooled by fake news?",
         subsections: [
-            "Check the source: Before trusting a news story, check the source of the information. Is it a reputable news outlet or a blog with no known credentials? Be carefull of sites with a political leaning, and check their bias before accepting their reporting.",
-            
-            "Look for other surces and evidence: If a news story seems too good (or bad) to be true, look for other sources that corroborate the story. Reliable news outlets and fact-checking websites can be helpful in verifying the accuracy of a news story.",
-            
-            "Check the author's credentials: Before accepting the credibility of the author, check their credentials. Do they have a history of accurate reporting or do they have a personal or political bias?",
-            
-            "Pay attention to the tone and language used in the article: Fake news often uses sensational language, over-the-top headlines, or persuasive tone to persuade readers to a particular viewpoint. Be aware of articles that use such techniques.",
-            
-            "Look for confirmation bias: It is easy to be fooled by fake news that supports our pre-existing beliefs. Be open to considering alternative perspectives and do not rely solely on news sources that confirm our biases.",
-            
-            "Check the date of the article: Sometimes, fake news articles can be old or out-of-date. Be sure to check the date of the article before accepting its claims. "
+            "1. Check the source:",
+            "Before trusting a news story, check the source of the information. Is it a reputable news outlet or a blog with no known credentials? Exercise caution on websites with a political leaning and check their bias before accepting their reporting.",
+            "",
+
+            "2. Look for other sources and evidence:",
+            "If a news story seems too good (or bad) to be true, look for other sources that corroborate the story. Reliable news outlets and fact-checking websites can be helpful in verifying the accuracy of a news story.",
+            "",
+
+            "3. Check the author's credentials:",
+            "Before accepting the credibility of the author, check their credentials. Do they have a history of accurate reporting, or do they have a personal or political bias?",
+            "",
+
+            "4. Pay attention to the tone and language used in the article:",
+            "Fake news often uses sensational language, over-the-top headlines, or persuasive tone to persuade readers to a particular viewpoint. Be aware of articles that use such techniques.",
+            "",
+
+            "5. Look for confirmation bias:",
+            "It is easy to be fooled by fake news that supports our pre-existing beliefs. Be open to considering alternative perspectives and do not rely solely on news sources that confirm our biases.",
+            "",
+
+            "6. Check the date of the article:",
+            "Sometimes, fake news articles can be old or out-of-date. Be sure to check the date of the article before accepting its claims."
+
+
         ],
         size: "15px",
         color: "#0301fc"

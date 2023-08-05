@@ -21,7 +21,7 @@ let Button = ({reference,children}:ButtonProps) => {
 let Nav = () => {
 
     return (
-        <div className="w-[100vw] flex z-10 h-[100px]">
+        <div className="w-[100vw] flex z-10 h-[100px]  ">
           <div className="grow flex">
             <div className="flex grow basis-0 shrink-0 ml-[5vw]">
                 <img style={{width:'auto', height:'100%'}} src={psu}/>
