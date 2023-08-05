@@ -28,7 +28,8 @@ function MainScreen() {
 
     return (
       <>
-        <div className='relative grow flex flex-col'>
+        <div className='w-[100%] h-[100px]'></div>
+        <div className='relative grow flex flex-col '>
           {!isTurnedOff ? <PopAnimation showAll={false} /> : ""}
           {(popScreen && !isTurnedOff) ? <PopAnimation showAll={true}/> : ""}
           <section className='grow'>

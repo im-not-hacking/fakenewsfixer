@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col w-screen h-screen bg-[black]'>
+      <div className='flex flex-col bg-[black] h-[100vh] w-[100vw]'>
           <Nav/>
           <MainScreen/>
       </div>

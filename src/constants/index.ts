@@ -39,7 +39,7 @@ const colors = [
 
 const navButtons = [
     {
-        name: "About",
+        name: "Background",
         reference: "#about"
     },
     {
@@ -151,6 +151,17 @@ const aboutSections = [
         ],
         size: "15px",
         color: "#02feff"
+    },
+    {
+        title: "Sources",
+        subsections: [
+            "https://guides.libraries.psu.edu/newslit",
+            "https://guides.lib.umich.edu/fakenews",
+            "https://guides.library.cornell.edu/evaluate_news/fakenews",
+
+        ],
+        size: "15px",
+        color: "#02feff"
     }
 ]
 
@@ -197,7 +208,7 @@ const questions = [
     numb: 1,
     photo: "../assets/q1.jpeg",
     explanation: "BBC is a well-known and reliable news channel. Although there were rumors about the status of Queen Elizabeth's health leading up to her death, her passing was covered by many well-known news sources around the world as she was a public figure. PS: Rumors are typically not found in large, reputable news channels. ",
-    question: "Reliable source",
+    question: "TRUE: Reliable source",
     answer: 1,
     options: [
       "True",
@@ -207,7 +218,7 @@ const questions = [
     {
     numb: 2,
     photo: "assets/game/q2.jpeg",
-    question: "Confirmation Bias and Phrasing",
+    question: "FALSE: Confirmation Bias and Phrasing",
     explanation: "The previous article contains leading vocabulary that favors a certain viewpoint when stating that 'Lockdowns ruined industries in America'.The wording subconsciously makes people associate lockdowns with something harmful, even though its purpose was to control covid spread at the time of the pandemic. This is an example of Confirmation Bias, the human tendency to search for, favor, and use information that confirms one's pre-existing views on a certain topic.",
     answer: 0,
     options: [
@@ -218,7 +229,7 @@ const questions = [
     {
     numb: 3,
     photo: "assets/game/q3.png",
-    question: "If it is too good to be true, then it probably is",
+    question: "FALSE: If it is too good to be true, then it probably is",
     explanation: "Fake news can be generated as a criticism of a company or idea in order to DISRUPT their work or spark debate. Ely Lilly, One of the largest producers of insulin in the world,  was the target of a fake twitter account. The false tweet claiming insulin was free caused ely lilly's stocks to drop 6% within 24 hours.",
     answer: 0,
     options: [
@@ -229,7 +240,7 @@ const questions = [
     {
     numb: 4,
     photo: "assets/game/q4.png",
-    question: "Do not believe everything you read on Twitter",
+    question: "FALSE: Do not believe everything you read on Twitter",
     explanation: "Not every form of mass communication is trustworthy, particularly those that allow private accounts and serve as social media This tweet allegedly sent by the Syrian electronic army was from a hacked twitter account posing as the Associated Press How do you prevent falling for fake news on twitter? Simply search for validation of the news you read across multiple sources (Google it, for instance)",
     answer: 0,
     options: [
@@ -240,7 +251,7 @@ const questions = [
     {
     numb: 5,
     photo: "assets/game/q5.png",
-    question: "Is it a joke?",
+    question: "FALSE: Is it a joke?",
     explanation: "This meme started with the 'one word' trend on twitter in which brands posted one word that defined them. However, some people saw the chance to play pranks on individuals and companies by emulating the trend. In the quiz example, the tweet impersonates Matt Gaetz following accusations and a federal investigation about his involvement in sex trafficking minors, although Gaetz was not charged in the case.",
     answer: 0,
     options: [
@@ -253,7 +264,7 @@ const questions = [
      {
      numb: 6,
      photo: "assets/game/q6.png",
-     question: "clear headlines and no bias",
+     question: "TRUE: Clear headlines and no bias",
      explanation: "This is an unfortunate article; however, it is purely presenting facts about what happened to Bed Bath & Beyond. The phrasing does not lead to bias nor does it advertise competitors of Bed Bath & Beyond.",
      answer: 1,
      options: [
@@ -265,7 +276,7 @@ const questions = [
    {
     numb: 7,
     photo: "assets/game/q7.jpeg",
-    question: "KEEP An eye out FOR TYPOS AND grammatical errors",
+    question: "FALSE: KEEP An eye out FOR TYPOS AND grammatical errors",
     explanation: "In this article, there was a typo, instead of 'Obama' it should have read 'Osama' Even though the news was in a reliable channel, the error could result in misunderstandings about events. Poorly edited articles or news with frequent misspellings and grammatical errors is often a sign of fake news. PS: ex-president Obama is still alive",
     answer: 0,
     options: [
@@ -277,7 +288,7 @@ const questions = [
   {
     numb: 8,
     photo: "assets/game/q8.png",
-    question: "HAVE YOU EVER HEARD ABOUT CLICK BAIT?",
+    question: "FALSE: HAVE YOU EVER HEARD ABOUT CLICK BAIT?",
     explanation: "Click Bait is a term that characterizes sensationalistic news that intrigues people to click and try to understand the misleading or shocking headline. They are usually present at the end of websites or on social media platforms where they profit from clicks and views. Click bait is usually phrased in a provoking way, relies on exaggerated claims, or leaves out key information. Most of the time, click bait does not sound realistic.",
     answer: 0,
     options: [

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import psu from "../assets/psuLogo.png"
 import { navButtons } from "../constants";
 
@@ -20,11 +21,22 @@ let Button = ({reference,children}:ButtonProps) => {
 
 let Nav = () => {
 
+    const [colorChange, setColorChange] = useState(false)
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 2) {
+            setColorChange(true);
+        }
+        else {
+            setColorChange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+
     return (
-        <div className="w-[100vw] flex z-10 h-[100px]  ">
+        <div style={{background: `${colorChange ? 'black' : 'black'}`, zIndex: `${colorChange ? 100 : 0}`}} className="fixed w-[100vw] flex z-10 h-[100px] ">
           <div className="grow flex">
-            <div className="flex grow basis-0 shrink-0 ml-[5vw]">
-                <img style={{width:'auto', height:'100%'}} src={psu}/>
+            <div className="flex grow basis-0 shrink-0 ml-[5vw] items-center">
+                <img style={{width:'auto'}} className="h-[70px] sm:h-[100px]" src={psu}/>
             </div>
             <div className="flex grow justify-end items-center gap-[30px] basis-0 shrink-0 mr-[30px]">
                 {navButtons.map((item,i) =>(

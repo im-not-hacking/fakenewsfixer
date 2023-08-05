@@ -26,8 +26,8 @@ const About = () => {
                 </div>
             </div>
             <div className='aboutButtons flex w-[100%] gap-[5%] justify-center mt-[20px]'>
-                {aboutSections.map((item,i) => (
-                    <div key={i} style={(index == i) ? {background:`red`} : {background: "black"}} className='cursor-pointer rounded-full w-[25px] h-[25px] mt-[10px]' onClick={() => setIndex(i)}/>
+                {[0,1,2,3,4].map((item) => (
+                    <div key={item} style={(index == item) ? {background:`red`} : {background: "black"}} className='cursor-pointer rounded-full w-[25px] h-[25px] mt-[10px]' onClick={() => setIndex(item)}/>
                 ))}
             </div>
         </div>
